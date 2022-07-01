@@ -1,0 +1,85 @@
+button {
+    color: white;
+    background-color: green;
+}
+
+#sidebar {
+    display: flex;
+    flex-grow: 0;
+    height: 100vh;
+    width: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    }
+
+#rightSide {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+div#topContain {
+    background-color: rgb(228, 226, 226);
+    height: 40%;
+}
+
+div#midContain {
+    background-color: white;
+    height: 20%;
+    border: #000000
+}
+
+div#btmContain {
+    background-color: rgb(228, 226, 226);
+    height: 40%
+}
+
+.bar {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    margin-top: 20rem;
+    position: absolute;
+    height: 10rem;  
+    left: 0;
+    right: 0;
+    color: blue;
+}
+
+img.rain {
+    height: 100vh;
+    position: sticky;
+}
+
+.page-wrapper {
+position:absolute;
+top:0;
+bottom:0;
+left: 0;
+right: 0;
+}
+
+.input {
+    width: 50%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+img.odin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
