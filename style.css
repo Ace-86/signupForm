@@ -1,43 +1,81 @@
-button {
-    color: white;
-    background-color: green;
+@font-face {
+    font-family: my-font;
+    src: url(../font/Norse-Bold.otf)
 }
 
-#sidebar {
-    display: flex;
-    flex-grow: 0;
-    height: 100vh;
-    width: auto;
-    position: relative;
+
+/* entire page */
+
+.page-wrapper {
+    position:absolute;
+    top:0;
+    bottom:0;
     left: 0;
-    top: 0;
-    }
+    right: 0;
 
-#rightSide {
+    
+}
+
+div.wrap {
     display: flex;
+    flex-flow: row wrap;
+
+}
+.row {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+h1, h2 {
+    font-family: my-font;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 
-div#topContain {
-    background-color: rgb(228, 226, 226);
-    height: 40%;
+
+
+
+/* left side */
+
+#leftside {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black;
 }
 
-div#midContain {
-    background-color: white;
-    height: 20%;
-    border: #000000
+p.barWords {
+    position: relative;
+    font-family: my-font;
+    font-size: 3rem;
+    color: white;
+    margin-right: 7rem;
 }
 
-div#btmContain {
-    background-color: rgb(228, 226, 226);
-    height: 40%
+img.odin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bar {
     background: rgba(0, 0, 0, 0.7);
-    display: flex;
+    display: inline-flex;
     margin-top: 20rem;
     position: absolute;
     height: 10rem;  
@@ -51,35 +89,84 @@ img.rain {
     position: sticky;
 }
 
-.page-wrapper {
-position:absolute;
-top:0;
-bottom:0;
-left: 0;
-right: 0;
+
+
+
+/* right side */
+
+#rightSide {
+    display: flex;
+    width: 60vw;
+    position: relative;
 }
+
+
+div#topContain {
+    background-color: rgba(243, 243, 243, 0.966);
+    height: 35%;
+}
+
+div#dummy-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+p.intro {
+    margin: 1rem;
+}
+
+div#midContain {
+    display: flex;
+    background-color: white;
+    height: 30%;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+   
+
+}
+
+form {
+    color: black;
+}
+
+div.rightInput{
+    display: flex;
+    flex-flow: column;
+
+}
+
 
 .input {
     width: 50%;
+    margin: .5rem;
+    text-transform: uppercase;
+    opacity: 70%;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22, .2);
 
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    width:100%;
+input:focus {
+    outline: none;
+    border: 2px solid red;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+
+div#btmContain {
+    background-color:  rgba(243, 243, 243, 0.966);
+    height: 35%
 }
 
-img.odin {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+button {
+    color: white;
+    background-color: green;
+    height: 3rem;
+    width: 14rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+p.logIn {
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
